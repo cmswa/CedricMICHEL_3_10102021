@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <title>ohmyfood</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo/ohmyfood@2x.svg" />
 
 </head>
 
@@ -19,9 +20,9 @@
     <div id="bloc_page">
         <!-- pour laisser une marge au footer -->
 
-        <header>
+        <header class="header">
 
-            <h1> <img src="images/logo/ohmyfood.png" alt="ohmyfood" /> </h1>
+            <h1 class="header__logo"> <img src="images/logo/ohmyfood.png" alt="ohmyfood" /> </h1>
 
         </header>
 
@@ -76,7 +77,9 @@
             <ul class="restaurant">
                 <li>
                     <a href="./html/laPaletteDuGout.html">
-                        <div class="restaurant__photo restaurant__photo--01">
+                        <div class="restaurant__photo">
+                            <img class="restaurant__photo restaurant__photo--01"
+                                src="images/restaurants/small-la_palette_du_gout.jpg" alt="La palette du goût">
                             <div class="restaurant__new">Nouveau</div>
                         </div>
                         <div class="restaurant__fig">
@@ -90,7 +93,9 @@
                 </li>
                 <li>
                     <a href="./html/laNoteEnchantee.html">
-                        <div class="restaurant__photo restaurant__photo--02">
+                        <div class="restaurant__photo">
+                            <img class="restaurant__photo restaurant__photo--02"
+                                src="images/restaurants/small-la_note_enchantee.jpg" alt="La note enchantée">
                             <div class="restaurant__new">Nouveau</div>
                         </div>
                         <div class="restaurant__fig">
@@ -104,7 +109,9 @@
                 </li>
                 <li>
                     <a href="./html/aLaFrancaise.html">
-                        <div class="restaurant__photo restaurant__photo--03">
+                        <div class="restaurant__photo">
+                            <img class="restaurant__photo restaurant__photo--03"
+                                src="images/restaurants/small-a_la_francaise.jpg" alt="À la française">
                         </div>
                         <div class="restaurant__fig">
                             <div class="restaurant__text">
@@ -117,7 +124,9 @@
                 </li>
                 <li>
                     <a href="./html/leDeliceDesSens.html">
-                        <div class="restaurant__photo restaurant__photo--04">
+                        <div class="restaurant__photo">
+                            <img class="restaurant__photo restaurant__photo--04"
+                                src="images/restaurants/small-le_delice_des_sens.jpg" alt="Le délice des sens">
                         </div>
                         <div class="restaurant__fig">
                             <div class="restaurant__text">
@@ -138,11 +147,11 @@
         <h3>ohmyfood</h3>
         <ul class="about">
             <li>
-                <div class="abou__icon--ustensils"></div>
+                <div class="about__icon--ustensils"></div>
                 <a href="">Proposer un restaurant</a>
             </li>
             <li>
-                <div class="abou__icon--hands"></div>
+                <div class="about__icon--hands"></div>
                 <a href="">Devenir partenaire</a>
             </li>
             <li>
