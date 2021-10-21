@@ -1,0 +1,18 @@
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: $colorForm;
+  padding: 0.7rem 1rem 1rem 3rem;
+  #zn_saisie {
+    border: none;
+    background-color: $colorForm;
+    padding-left: 1rem;
+    font-weight: 600;
+  }
+}
+
+.zn_saisie--border-top-shadow {
+  background: linear-gradient(180deg, #cfcfcf 0%, $colorForm 100%);
+  height: 5px;
+}

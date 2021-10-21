@@ -1,9 +1,11 @@
 .header {
   h1 {
     text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
   }
   .header__logo {
-    width: 43%;
+    max-width: 160px;
     // width: 160px;
   }
 }
