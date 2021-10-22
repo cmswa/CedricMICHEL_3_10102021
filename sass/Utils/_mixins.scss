@@ -1,0 +1,4 @@
+@mixin btn-background {
+  background: linear-gradient(174deg, $colorSecondary 0%, $colorPrimary 100%);
+  box-shadow: 0px 8px 10px #c5c5c5;
+}

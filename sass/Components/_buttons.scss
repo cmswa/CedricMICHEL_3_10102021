@@ -1,9 +1,8 @@
 .btn__big {
-  background: linear-gradient(174deg, $colorSecondary 0%, $colorPrimary 100%);
+  @include btn-background;
   border-radius: 25px;
   color: white;
   font-weight: 500;
-  box-shadow: 0px 8px 10px #c5c5c5;
 }
 
 .btn__big--acceuil {
@@ -15,4 +14,10 @@
 }
 
 .btn {
+  transition: all 300ms;
+  &:hover,
+  &:focus {
+    filter: brightness(120%);
+    box-shadow: 0px 3px 12px 7px #a0a0a0;
+  }
 }
