@@ -72,24 +72,21 @@ footer h3 {
   font-family: "shrikhand";
 }
 
+.btn {
+  transition: all 300ms;
+}
 .btn__big {
   background: linear-gradient(174deg, #FF79DA 0%, #9356DC 100%);
-  box-shadow: 0px 8px 10px #c5c5c5;
+  box-shadow: 0px 8px 10px 0 #c5c5c5;
   border-radius: 25px;
   color: white;
   font-weight: 500;
 }
-
 .btn__big--acceuil {
   padding: 1rem 1.4rem;
 }
-
 .btn__big--menu {
   padding: 1rem 3.5rem;
-}
-
-.btn {
-  transition: all 300ms;
 }
 .btn:hover, .btn:focus {
   filter: brightness(120%);
@@ -101,7 +98,7 @@ footer h3 {
   margin-top: 1rem;
   margin-bottom: 0.5rem;
 }
-.header .header__logo {
+.header__logo {
   max-width: 160px;
 }
 
@@ -118,8 +115,7 @@ form #zn_saisie {
   padding-left: 1rem;
   font-weight: 600;
 }
-
-.zn_saisie--border-top-shadow {
+form #zn_saisie--border-top-shadow {
   background: linear-gradient(180deg, #cfcfcf 0%, #eaeaea 100%);
   height: 5px;
 }
@@ -155,4 +151,45 @@ ul {
 section h2 {
   font-size: 1.5rem;
   padding-left: 1rem;
+}
+
+.use {
+  height: 310px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 83%;
+  margin-left: 1rem;
+}
+.use--background {
+  padding: 1.7rem;
+  padding-left: 0;
+  background-color: #f6f6f6;
+  border-radius: 1.8rem;
+  box-shadow: 0px 3px 10px 3px #e6e6e6;
+}
+.use__li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  right: 9%;
+}
+.use__number {
+  background-color: #9356DC;
+  padding: 2px 7px;
+  border-radius: 25px;
+  color: white;
+}
+.use__icon--mobile {
+  font-size: 1.3rem;
+}
+.use em {
+  font-weight: 600;
+  font-style: normal;
+}
+.use__em--move {
+  position: relative;
+  left: 4%;
 }/*# sourceMappingURL=style.css.map */

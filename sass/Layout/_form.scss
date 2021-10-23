@@ -9,10 +9,9 @@ form {
     background-color: $colorForm;
     padding-left: 1rem;
     font-weight: 600;
+    &--border-top-shadow {
+      background: linear-gradient(180deg, #cfcfcf 0%, $colorForm 100%);
+      height: 5px;
+    }
   }
-}
-
-.zn_saisie--border-top-shadow {
-  background: linear-gradient(180deg, #cfcfcf 0%, $colorForm 100%);
-  height: 5px;
 }

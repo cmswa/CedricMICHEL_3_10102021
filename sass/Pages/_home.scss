@@ -30,3 +30,49 @@ section h2 {
   font-size: 1.5rem;
   padding-left: 1rem;
 }
+
+.use {
+  height: 310px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 83%;
+  margin-left: 1rem;
+  &--background {
+    padding: 1.7rem;
+    padding-left: 0;
+    background-color: $colorFourth;
+    border-radius: 1.8rem;
+    @include shadows(
+      $offset-y: 3px,
+      $spread-radius: 3px,
+      $colour: lighten(#c5c5c5, 13)
+    );
+    // 0px 3px 10px 3px
+  }
+  &__li {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    right: 9%;
+  }
+  &__number {
+    background-color: $colorPrimary;
+    padding: 2px 7px;
+    border-radius: 25px;
+    color: white;
+  }
+  &__icon--mobile {
+    font-size: 1.3rem;
+  }
+  em {
+    font-weight: 600;
+    font-style: normal;
+  }
+  &__em--move {
+    position: relative;
+    left: 4%;
+  }
+}
