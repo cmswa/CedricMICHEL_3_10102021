@@ -16,6 +16,7 @@ h2 {
 
 article {
   margin-top: 3rem;
+  margin-bottom: 3rem;
   h2 {
     font-size: 1.5rem;
     padding-left: 1rem;
@@ -49,6 +50,9 @@ section h2 {
       $colour: lighten(#c5c5c5, 13)
     );
     // 0px 3px 10px 3px
+    &:last-child {
+      background-color: lighten($colorPrimary, 35);
+    }
   }
   &__li {
     display: flex;
@@ -66,6 +70,13 @@ section h2 {
   }
   &__icon--mobile {
     font-size: 1.3rem;
+    color: #7e7e7e;
+  }
+  &__icon--list {
+    color: #7e7e7e;
+  }
+  &__icon--store {
+    color: $colorPrimary;
   }
   em {
     font-weight: 600;
@@ -74,5 +85,48 @@ section h2 {
   &__em--move {
     position: relative;
     left: 4%;
+  }
+}
+
+.restaurant {
+  a {
+    height: 100%;
+  }
+  li {
+    height: 250px;
+  }
+  &__photo {
+    height: 69.6%;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+  }
+  img {
+    height: 100%;
+  }
+  &__new {
+    position: absolute;
+    top: 11%;
+    left: 84%;
+    transform: translate(-50%, -50%);
+    background: $colorThird;
+    border-radius: 3px;
+    padding: 0.4rem 0.8rem;
+    font-weight: 700;
+    color: #008766;
+  }
+  &__fig {
+    display: flex;
+    justify-content: space-between;
+    height: 30.4%;
+    align-items: center;
+  }
+  &__text {
+    font-size: 1.2rem;
+    padding: 1rem;
+    &--bold {
+      font-weight: 800;
+      padding-bottom: 0.2rem;
+    }
   }
 }

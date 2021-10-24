@@ -138,6 +138,7 @@ h2 {
 
 article {
   margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 article h2 {
   font-size: 1.5rem;
@@ -168,6 +169,9 @@ section h2 {
   border-radius: 1.8rem;
   box-shadow: 0px 3px 10px 3px #e6e6e6;
 }
+.use--background:last-child {
+  background-color: #f2eafb;
+}
 .use__li {
   display: flex;
   flex-wrap: wrap;
@@ -184,6 +188,13 @@ section h2 {
 }
 .use__icon--mobile {
   font-size: 1.3rem;
+  color: #7e7e7e;
+}
+.use__icon--list {
+  color: #7e7e7e;
+}
+.use__icon--store {
+  color: #9356DC;
 }
 .use em {
   font-weight: 600;
@@ -192,4 +203,46 @@ section h2 {
 .use__em--move {
   position: relative;
   left: 4%;
+}
+
+.restaurant a {
+  height: 100%;
+}
+.restaurant li {
+  height: 250px;
+}
+.restaurant__photo {
+  height: 69.6%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+}
+.restaurant img {
+  height: 100%;
+}
+.restaurant__new {
+  position: absolute;
+  top: 11%;
+  left: 84%;
+  transform: translate(-50%, -50%);
+  background: #99E2D0;
+  border-radius: 3px;
+  padding: 0.4rem 0.8rem;
+  font-weight: 700;
+  color: #008766;
+}
+.restaurant__fig {
+  display: flex;
+  justify-content: space-between;
+  height: 30.4%;
+  align-items: center;
+}
+.restaurant__text {
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+.restaurant__text--bold {
+  font-weight: 800;
+  padding-bottom: 0.2rem;
 }/*# sourceMappingURL=style.css.map */
