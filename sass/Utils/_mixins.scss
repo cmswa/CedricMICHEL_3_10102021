@@ -1,3 +1,7 @@
 @mixin shadows($offset-y: 8px, $spread-radius: 0, $colour: #c5c5c5) {
   box-shadow: 0px $offset-y 10px $spread-radius $colour;
 }
+
+@mixin position($position: bottom) {
+  object-position: $position;
+}

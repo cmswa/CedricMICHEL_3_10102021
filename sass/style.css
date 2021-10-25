@@ -120,6 +120,7 @@ form #zn_saisie--border-top-shadow {
   height: 5px;
 }
 
+/* *** Descriptif *** */
 #descriptif {
   text-align: center;
   padding: 1rem 0;
@@ -136,6 +137,7 @@ h2 {
   padding: 0 2rem;
 }
 
+/* *** Fonctionnement *** */
 article {
   margin-top: 3rem;
   margin-bottom: 3rem;
@@ -146,12 +148,7 @@ article h2 {
 }
 
 ul {
-  padding-left: 1rem;
-}
-
-section h2 {
-  font-size: 1.5rem;
-  padding-left: 1rem;
+  padding: 1.1rem;
 }
 
 .use {
@@ -205,11 +202,22 @@ section h2 {
   left: 4%;
 }
 
+/* *** Restaurants *** */
+section {
+  background-color: #f6f6f6;
+  padding: 2rem 0;
+}
+section h2 {
+  font-size: 1.5rem;
+  padding-left: 1.1rem;
+}
+
 .restaurant a {
   height: 100%;
 }
 .restaurant li {
   height: 250px;
+  padding-bottom: 1.1rem;
 }
 .restaurant__photo {
   height: 69.6%;
@@ -217,14 +225,32 @@ section h2 {
   -o-object-fit: cover;
      object-fit: cover;
   position: relative;
+  border-top-right-radius: 1.2rem;
+  border-top-left-radius: 1.2rem;
+}
+.restaurant__photo--01 {
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+.restaurant__photo--02 {
+  -o-object-position: 0 61%;
+     object-position: 0 61%;
+}
+.restaurant__photo--03 {
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+.restaurant__photo--04 {
+  -o-object-position: bottom;
+     object-position: bottom;
 }
 .restaurant img {
   height: 100%;
 }
 .restaurant__new {
   position: absolute;
-  top: 11%;
-  left: 84%;
+  top: 16%;
+  left: 83%;
   transform: translate(-50%, -50%);
   background: #99E2D0;
   border-radius: 3px;
@@ -237,6 +263,9 @@ section h2 {
   justify-content: space-between;
   height: 30.4%;
   align-items: center;
+  background-color: white;
+  border-bottom-right-radius: 1.2rem;
+  border-bottom-left-radius: 1.2rem;
 }
 .restaurant__text {
   font-size: 1.2rem;
@@ -245,4 +274,8 @@ section h2 {
 .restaurant__text--bold {
   font-weight: 800;
   padding-bottom: 0.2rem;
+}
+.restaurant__heart {
+  font-size: 1.5rem;
+  padding-right: 1rem;
 }/*# sourceMappingURL=style.css.map */
