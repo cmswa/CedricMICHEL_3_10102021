@@ -111,17 +111,13 @@ section {
     position: relative;
     border-top-right-radius: 1.2rem;
     border-top-left-radius: 1.2rem;
-    &--01 {
+    &--01,
+    &--03,
+    &--04 {
       @include position;
     }
     &--02 {
       @include position($position: 0 61%);
-    }
-    &--03 {
-      @include position;
-    }
-    &--04 {
-      @include position;
     }
   }
   img {
