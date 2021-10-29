@@ -23,17 +23,17 @@
   }
 }
 
-/*
-.fa-heart {
+/*.fa-heart {
   &:hover + .fa-heart::after,
-  &:focus + .fa-heart::after {
+  &:focus + .fa-heart::after,
+  &:active + .fa-heart::after {
     transform: scale(1);
   }
-  .fa-heart::after {
-    content: "\f004";
+   .fa-heart::after,
+  .fa-heart:hover::after,
+  .fa-heart:focus::after {
     position: absolute;
     background: linear-gradient(174deg, $colorSecondary 0%, $colorPrimary 100%);
-    @include shadows;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 0;
@@ -44,4 +44,30 @@
     transform: scale(0.1);
     transition: transform 3000ms;
   }
-} */
+}*/
+
+.restaurant__heart {
+  display: flex;
+  &--off {
+    position: absolute;
+    opacity: 1;
+    //background-color: white;
+    &:hover {
+      opacity: 0;
+    }
+  }
+  &--on {
+    opacity: 0;
+    background-image: linear-gradient(
+      174deg,
+      $colorSecondary 0%,
+      $colorPrimary 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    &:hover {
+      opacity: 1;
+      z-index: 1;
+    }
+  }
+}
