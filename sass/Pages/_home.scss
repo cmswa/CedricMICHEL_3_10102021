@@ -89,7 +89,8 @@ ul {
 /* *** Restaurants *** */
 section {
   background-color: $colorFourth;
-  padding: 2rem 0;
+  padding: 2rem 0 1rem 0;
+
   h2 {
     font-size: 1.5rem;
     padding-left: 1.1rem;
@@ -97,63 +98,8 @@ section {
 }
 
 .restaurant {
+  padding-top: 0;
   a {
     height: 100%;
-  }
-  li {
-    height: 250px;
-    padding-bottom: 1.1rem;
-  }
-  &__photo {
-    height: 69.6%;
-    width: 100%;
-    object-fit: cover;
-    position: relative;
-    border-top-right-radius: 1.2rem;
-    border-top-left-radius: 1.2rem;
-    &--01,
-    &--03,
-    &--04 {
-      @include position;
-    }
-    &--02 {
-      @include position($position: 0 61%);
-    }
-  }
-  img {
-    height: 100%;
-  }
-  &__new {
-    position: absolute;
-    top: 16%;
-    left: 83%;
-    transform: translate(-50%, -50%);
-    background: $colorThird;
-    border-radius: 3px;
-    padding: 0.4rem 0.8rem;
-    font-weight: 700;
-    color: #008766;
-  }
-  &__fig {
-    display: flex;
-    justify-content: space-between;
-    height: 30.4%;
-    align-items: center;
-    background-color: white;
-    border-bottom-right-radius: 1.2rem;
-    border-bottom-left-radius: 1.2rem;
-  }
-  &__text {
-    font-size: 1.2rem;
-    padding: 1rem;
-    &--bold {
-      font-weight: 800;
-      padding-bottom: 0.2rem;
-    }
-  }
-  &__heart {
-    font-size: 1.5rem;
-    padding-right: 1rem;
-    //  -webkit-text-stroke: 1px black;
   }
 }

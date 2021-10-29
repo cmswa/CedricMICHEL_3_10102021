@@ -49,7 +49,7 @@
 } */
 
 /* Polices de caractéres */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 
 // application de la police
 body {
@@ -58,4 +58,7 @@ body {
 
 footer h3 {
   font-family: "shrikhand";
+  font-weight: 100;
+  margin-bottom: 0;
+  padding-left: 1.1rem;
 }

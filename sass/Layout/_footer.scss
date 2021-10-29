@@ -1,0 +1,27 @@
+footer {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  background: $colorFooter;
+  color: white;
+  a {
+    color: white;
+  }
+  li {
+    display: flex;
+    align-items: center;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0;
+    height: 60%;
+    padding: 0.5rem 1.1rem;
+    justify-content: space-evenly;
+    &__icon {
+      font-size: 0.7rem;
+      margin-right: 0.8rem;
+    }
+  }
+}
