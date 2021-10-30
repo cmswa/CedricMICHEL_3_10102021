@@ -5,3 +5,8 @@
 @mixin position($position: bottom) {
   object-position: $position;
 }
+
+@mixin shrikhand {
+  font-family: "shrikhand";
+  font-weight: 100;
+}

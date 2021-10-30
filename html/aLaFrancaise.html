@@ -17,30 +17,34 @@
 
 <body>
 
-    <header class="header">
+    <header class="header header__menu">
         <a href="../index.html"><i class="fas fa-arrow-left"></i></a>
-        <h1 class="header__logo"> <img src="../images/logo/ohmyfood.png" alt="ohmyfood" /> </h1>
+        <h1> <img class="header__logo" src="../images/logo/ohmyfood.png" alt="ohmyfood" /> </h1>
 
     </header>
 
-    <img class="restaurant__photo restaurant__photo--03" src="../images/restaurants/small-a_la_francaise.jpg"
-        alt="À la française">
+    <img class="menu__photo menu__photo--03" src="../images/restaurants/small-a_la_francaise.jpg" alt="À la française">
 
-    <main>
+    <main class="menu">
         <div class="nom-restaurant">
             <h1 class="nom-restaurant__titre">À la française</h1>
-            <a href=""><i class="far fa-heart"></i></a>
+            <a href=""><i class="restaurant__heart far fa-heart"></i></a>
         </div>
 
-        <ul class="entrees">
+        <ul class="entrees container-menu">
             <li>
                 <h2>ENTRÉES</h2>
             </li>
-            <li class="entrees__entrees01">
+            <li>
+                <div class="container-menu__boderbottom"></div>
+            </li>
+            <li class="entrees__entrees01 card-menu">
                 <a href="">
-                    <p class="entrees__entrees01--titre">Tartare de poulpe acidulé</p>
-                    <p class="entrees__entrees01--description">Aux zestes d'orange</p>
-                    <div class="entrees__entrees01--prix">25€</div>
+                    <div class="card-menu--text">
+                        <p class="card-menu--titre">Tartare de poulpe acidulé</p>
+                        <p class="card-menu--description">Aux zestes d'orange</p>
+                    </div>
+                    <div class="card-menu--prix">25€</div>
                 </a>
             </li>
             <li class="entrees__entrees02">
@@ -59,9 +63,13 @@
             </li>
         </ul>
 
-        <ul class="plats">
+        <ul class="plats container-menu">
             <li>
-                <h2>PLATS</h2>
+                <h2>PLATS
+                </h2>
+            </li>
+            <li>
+                <div class="container-menu__boderbottom"></div>
             </li>
             <li class="plats__plats01">
                 <a href="">
@@ -86,9 +94,12 @@
             </li>
         </ul>
 
-        <ul class="desserts">
+        <ul class="desserts container-menu">
             <li>
-                <h2>ENTRÉES</h2>
+                <h2>DESSERTS</h2>
+            </li>
+            <li>
+                <div class="container-menu__boderbottom"></div>
             </li>
             <li class="desserts__desserts01">
                 <a href="">
