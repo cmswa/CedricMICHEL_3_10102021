@@ -64,4 +64,7 @@ footer h3 {
 
 .nom-restaurant__titre {
   @include shrikhand;
+  margin: 0;
+  padding: 1rem 0;
+  margin-bottom: -1rem;
 }
