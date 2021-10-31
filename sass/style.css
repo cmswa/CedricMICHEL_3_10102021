@@ -130,27 +130,76 @@ footer h3 {
     transition: transform 3000ms;
   }
 }*/
+/*.restaurant__heart {
+  font-size: 1.5rem;
+  padding-right: 1rem;
+  display: flex;
+  &--off {
+    position: absolute;
+    opacity: 1;
+    &:hover {
+      opacity: 0;
+    }
+  }
+  &--on {
+    opacity: 0;
+    background: red;
+    background-image: linear-gradient(
+      174deg,
+      $colorSecondary 0%,
+      $colorPrimary 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    &:hover {
+      opacity: 1;
+      z-index: 1;
+      transform: scale(1);
+    }
+  }
+}*/
 .restaurant__heart {
   font-size: 1.5rem;
   padding-right: 1rem;
   display: flex;
 }
 .restaurant__heart--off {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  -webkit-text-stroke: 1px white;
+  /*  &:hover .restaurant__heart--on {
+    transform: scale(1);
+    opacity: 1;
+  } */
+  /*   &:hover {
+    background: red;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0px white;
+  } */
+}
+.restaurant__heart--on {
   position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  background: red;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  transform: scale(0);
+  transition: 0.3s ease;
+}
+.restaurant__heart--off:hover .restaurant__heart--on {
+  transform: scale(1);
   opacity: 1;
 }
 .restaurant__heart--off:hover {
-  opacity: 0;
-}
-.restaurant__heart--on {
-  opacity: 0;
-  background-image: linear-gradient(174deg, #FF79DA 0%, #9356DC 100%);
+  background: red;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-.restaurant__heart--on:hover {
-  opacity: 1;
-  z-index: 1;
+  -webkit-text-stroke: 0px white;
 }
 
 /* *** Home Acceuil * ***/
