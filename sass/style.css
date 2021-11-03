@@ -202,6 +202,33 @@ footer h3 {
   -webkit-text-stroke: 0px white;
 }
 
+.btn-heart {
+  font-size: 1.5em;
+  display: flex;
+  border: none;
+  background: none;
+}
+.btn-heart--off {
+  position: absolute;
+  opacity: 1;
+  transition-duration: 0.7s;
+}
+.btn-heart--on {
+  opacity: 0;
+  transition-duration: 0.7s;
+  background-color: red;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: red;
+}
+.btn-heart:hover .btn-heart--off {
+  opacity: 0;
+}
+.btn-heart:hover .btn-heart--on {
+  opacity: 1;
+}
+
 /* *** Home Acceuil * ***/
 .restaurant__card {
   height: 250px;
@@ -288,6 +315,43 @@ footer h3 {
 .card-menu--prix {
   font-weight: 700;
   padding-right: 1.2rem;
+}
+
+/* *** Animations *** Page Menu - Apparition progressive */
+@-webkit-keyframes apparitionMenu {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes apparitionMenu {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.card-menu {
+  -webkit-animation-name: apparitionMenu;
+          animation-name: apparitionMenu;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  transform: scale(0);
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+.card-menu--text {
+  transition-duration: 0.5s;
+}
+.card-menu--prix {
+  transition-duration: 0.5s;
 }
 
 .header h1 {
