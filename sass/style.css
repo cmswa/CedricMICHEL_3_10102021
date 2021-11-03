@@ -158,77 +158,6 @@ footer h3 {
     }
   }
 }*/
-.restaurant__heart {
-  font-size: 1.5rem;
-  padding-right: 1rem;
-  display: flex;
-}
-.restaurant__heart--off {
-  position: relative;
-  z-index: 1;
-  cursor: pointer;
-  -webkit-text-stroke: 1px white;
-  /*  &:hover .restaurant__heart--on {
-    transform: scale(1);
-    opacity: 1;
-  } */
-  /*   &:hover {
-    background: red;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 0px white;
-  } */
-}
-.restaurant__heart--on {
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: -1;
-  background: red;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  opacity: 0;
-  transform: scale(0);
-  transition: 0.3s ease;
-}
-.restaurant__heart--off:hover .restaurant__heart--on {
-  transform: scale(1);
-  opacity: 1;
-}
-.restaurant__heart--off:hover {
-  background: red;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 0px white;
-}
-
-.btn-heart {
-  font-size: 1.5em;
-  display: flex;
-  border: none;
-  background: none;
-}
-.btn-heart--off {
-  position: absolute;
-  opacity: 1;
-  transition-duration: 0.7s;
-}
-.btn-heart--on {
-  opacity: 0;
-  transition-duration: 0.7s;
-  background-color: red;
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-image: red;
-}
-.btn-heart:hover .btn-heart--off {
-  opacity: 0;
-}
-.btn-heart:hover .btn-heart--on {
-  opacity: 1;
-}
-
 /* *** Home Acceuil * ***/
 .restaurant__card {
   height: 250px;
@@ -352,6 +281,42 @@ footer h3 {
 }
 .card-menu--prix {
   transition-duration: 0.5s;
+}
+
+.fa-heart {
+  font-size: 50px;
+}
+
+.heart {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  -webkit-text-stroke: 2px white;
+}
+
+.heart-color {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  background: green;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  transform: scale(0);
+  transition: 0.3s ease;
+}
+
+.heart:hover .heart-color {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.heart:hover {
+  background: green;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0px white;
 }
 
 .header h1 {
