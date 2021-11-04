@@ -1,4 +1,4 @@
-/* *** Home Acceuil * ***/
+/* ***** Home Acceuil * *****/
 .restaurant {
   &__card {
     height: 250px;
@@ -58,7 +58,8 @@
   }
 }
 
-/* *** Restaurants Menu * ***/
+/* ******************************
+   ***** Restaurants Menu **** */
 .card-menu {
   margin-top: 1rem;
   a {
@@ -115,4 +116,28 @@
   &--prix {
     transition-duration: 0.5s;
   }
+  /* &__delay-1 {
+    animation-delay: 0s;
+  }
+
+  &__delay-2 {
+    animation-delay: 0.2s;
+  }
+
+  &__delay-3 {
+    animation-delay: 0.4s;
+  }
+
+  &__delay-4 {
+    animation-delay: 0.6s;
+  } */
 }
+
+/* boucle */
+@for $i from 1 through 4 {
+  .card-menu__delay-#{$i} {
+    animation-delay: ($i * 0.2s);
+  }
+}
+
+/* *** Animations *** Plats - Coche à droite du plat */

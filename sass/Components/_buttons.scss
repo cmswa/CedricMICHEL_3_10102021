@@ -1,7 +1,7 @@
 .btn {
   transition: all 300ms;
   &__big {
-    background: linear-gradient(174deg, $colorSecondary 0%, $colorPrimary 100%);
+    @include background;
     @include shadows;
     border-radius: 25px;
     color: white;
@@ -88,23 +88,13 @@
     z-index: 1;
     cursor: pointer;
     -webkit-text-stroke: 1px white;
-    /*  &:hover .restaurant__heart--on {
-      transform: scale(1);
-      opacity: 1;
-    } */
-    /*   &:hover {
-      background: red;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      -webkit-text-stroke: 0px white;
-    } */
   }
   &--on {
     position: absolute;
     left: 0;
     top: 0;
     z-index: -1;
-    background: red;
+    @include background;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 0;
@@ -117,7 +107,7 @@
       opacity: 1;
     }
     &:hover {
-      background: red;
+      @include background;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       -webkit-text-stroke: 0px white;
@@ -133,16 +123,17 @@
   &--off {
     position: absolute;
     opacity: 1;
-    transition-duration: .7s;
+    transition-duration: 0.7s;
+    -webkit-text-stroke: 1px white;
   }
   &--on {
     opacity: 0;
-    transition-duration: .7s;
-    background-color: red;
+    transition-duration: 0.7s;
+    @include background;
     background-size: 100%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-image: red;
+    //background-image: red;
   }
   &:hover &--off {
     opacity: 0;

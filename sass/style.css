@@ -80,7 +80,6 @@ footer h3 {
   font-weight: 100;
   margin: 0;
   padding: 1rem 0;
-  margin-bottom: -1rem;
 }
 
 .btn {
@@ -168,23 +167,13 @@ footer h3 {
   z-index: 1;
   cursor: pointer;
   -webkit-text-stroke: 1px white;
-  /*  &:hover .restaurant__heart--on {
-    transform: scale(1);
-    opacity: 1;
-  } */
-  /*   &:hover {
-    background: red;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 0px white;
-  } */
 }
 .restaurant__heart--on {
   position: absolute;
   left: 0;
   top: 0;
   z-index: -1;
-  background: red;
+  background: linear-gradient(174deg, #FF79DA 0%, #9356DC 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0;
@@ -196,7 +185,7 @@ footer h3 {
   opacity: 1;
 }
 .restaurant__heart--off:hover {
-  background: red;
+  background: linear-gradient(174deg, #FF79DA 0%, #9356DC 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 0px white;
@@ -212,15 +201,15 @@ footer h3 {
   position: absolute;
   opacity: 1;
   transition-duration: 0.7s;
+  -webkit-text-stroke: 1px white;
 }
 .btn-heart--on {
   opacity: 0;
   transition-duration: 0.7s;
-  background-color: red;
+  background: linear-gradient(174deg, #FF79DA 0%, #9356DC 100%);
   background-size: 100%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-image: red;
 }
 .btn-heart:hover .btn-heart--off {
   opacity: 0;
@@ -229,7 +218,7 @@ footer h3 {
   opacity: 1;
 }
 
-/* *** Home Acceuil * ***/
+/* ***** Home Acceuil * *****/
 .restaurant__card {
   height: 250px;
   margin-bottom: 1.1rem;
@@ -285,7 +274,8 @@ footer h3 {
   padding-bottom: 0.2rem;
 }
 
-/* *** Restaurants Menu * ***/
+/* ******************************
+   ***** Restaurants Menu **** */
 .card-menu {
   margin-top: 1rem;
 }
@@ -346,6 +336,21 @@ footer h3 {
   transform: scale(0);
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
+  /* &__delay-1 {
+    animation-delay: 0s;
+  }
+
+  &__delay-2 {
+    animation-delay: 0.2s;
+  }
+
+  &__delay-3 {
+    animation-delay: 0.4s;
+  }
+
+  &__delay-4 {
+    animation-delay: 0.6s;
+  } */
 }
 .card-menu--text {
   transition-duration: 0.5s;
@@ -354,6 +359,28 @@ footer h3 {
   transition-duration: 0.5s;
 }
 
+/* boucle */
+.card-menu__delay-1 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.card-menu__delay-2 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.card-menu__delay-3 {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.card-menu__delay-4 {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+/* *** Animations *** Plats - Coche à droite du plat */
 .header h1 {
   text-align: center;
   margin-top: 1rem;
@@ -558,4 +585,5 @@ section h2 {
   justify-content: space-between;
   padding: 0 1rem;
   width: 92%;
+  margin-bottom: -1rem;
 }/*# sourceMappingURL=style.css.map */

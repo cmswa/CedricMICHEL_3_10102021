@@ -10,3 +10,7 @@
   font-family: "shrikhand";
   font-weight: 100;
 }
+
+@mixin background {
+  background: linear-gradient(174deg, $colorSecondary 0%, $colorPrimary 100%);
+}
