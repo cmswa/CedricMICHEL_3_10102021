@@ -69,8 +69,9 @@
     height: 70px;
     display: flex;
     justify-content: space-between;
-    padding-left: 0.6rem;
+    padding-left: 0.7rem;
     align-items: center;
+    overflow: hidden;
   }
   &--text {
     display: flex;
@@ -80,18 +81,24 @@
   &--titre {
     font-weight: 700;
     margin: 0;
-    padding-bottom: 0.3rem;
+    // padding-bottom: 0.3rem;
+    padding: 0 0.3rem 4px 0;
     @include rogner;
+    font-size: 1.1rem;
+  }
+  &--description-prix {
+    display: flex;
+    justify-content: space-between;
   }
   &--description {
     margin: 0;
-    display: flex;
-    justify-content: space-between;
     @include rogner;
+    font-size: 15px;
   }
   &--prix {
     font-weight: 700;
     padding-right: 1.2rem;
+    padding-left: 1em;
   }
   &--selection {
     height: 100%;

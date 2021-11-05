@@ -66,6 +66,7 @@ ul {
 /* Polices de caractéres */
 body {
   font-family: "roboto", serif, sans-serif;
+  overflow-x: hidden;
 }
 
 footer h3 {
@@ -286,8 +287,9 @@ footer h3 {
   height: 70px;
   display: flex;
   justify-content: space-between;
-  padding-left: 0.6rem;
+  padding-left: 0.7rem;
   align-items: center;
+  overflow: hidden;
 }
 .card-menu--text {
   display: flex;
@@ -297,22 +299,27 @@ footer h3 {
 .card-menu--titre {
   font-weight: 700;
   margin: 0;
-  padding-bottom: 0.3rem;
+  padding: 0 0.3rem 4px 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  font-size: 1.1rem;
+}
+.card-menu--description-prix {
+  display: flex;
+  justify-content: space-between;
 }
 .card-menu--description {
   margin: 0;
-  display: flex;
-  justify-content: space-between;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  font-size: 15px;
 }
 .card-menu--prix {
   font-weight: 700;
   padding-right: 1.2rem;
+  padding-left: 1em;
 }
 .card-menu--selection {
   height: 100%;
@@ -507,6 +514,7 @@ footer .about__icon {
 #descriptif h3 {
   font-weight: 300;
   margin-bottom: 3rem;
+  padding: 0 1rem;
 }
 
 h2 {
