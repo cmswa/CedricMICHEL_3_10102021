@@ -14,3 +14,9 @@
 @mixin background {
   background: linear-gradient(174deg, $colorSecondary 0%, $colorPrimary 100%);
 }
+
+@mixin rogner {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
