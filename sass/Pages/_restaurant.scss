@@ -26,3 +26,157 @@
     margin-bottom: -1rem;
   }
 }
+
+/* ***  Responsive *** */
+$breakpoints: (
+  mobile1: 330px,
+  mobile2: 500px,
+  tablette1: 810px,
+  desktop: 1100px,
+);
+
+// > 1100px
+@mixin desktop {
+  @media all and (min-width: map-get($breakpoints, desktop)) {
+    @content;
+  }
+}
+
+// > 810px
+@mixin tabletmore {
+  @media all and (min-width: map-get($breakpoints, tablette1)) {
+    @content;
+  }
+}
+
+// 810px à 1100px
+@mixin tablet-desktop {
+  @media all and (min-width: map-get($breakpoints, tablette1)) and (max-width: map-get($breakpoints, desktop)) {
+    @content;
+  }
+}
+
+// 500px à 1100px
+@mixin tablet-small-desktop {
+  @media all and (min-width: map-get($breakpoints, mobile2)) and (max-width: map-get($breakpoints, desktop)) {
+    @content;
+  }
+}
+
+// < 500px
+@mixin mobile-small {
+  @media all and (max-width: map-get($breakpoints, mobile1)) {
+    @content;
+  }
+}
+
+.btn__big--menu {
+  @include mobile-small {
+    width: auto;
+  }
+}
+
+// 500px à 810px
+@mixin tablet-small {
+  @media all and (min-width: map-get($breakpoints, mobile2)) and (max-width: map-get($breakpoints, tablette1)) {
+    @content;
+  }
+}
+
+.menu__photo {
+  @include tablet-small-desktop {
+    height: 498px;
+  }
+}
+
+.menu {
+  @include tablet-small-desktop {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+footer {
+  @include tablet-small-desktop {
+    padding-left: 1rem;
+  }
+}
+
+.card-menu--selection {
+  @include tablet-small-desktop {
+    width: 6rem;
+  }
+  @include tabletmore {
+    width: 5rem;
+  }
+}
+
+.card-menu:hover .card-menu--text {
+  @include tablet-small-desktop {
+    width: 83%;
+  }
+  @include tablet-small {
+    width: 80%;
+  }
+  @include tablet-desktop {
+    width: 86%;
+  }
+}
+
+.menu {
+  @include desktop {
+    width: 47%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: #f6f6f6e3;
+    transform: translate(98%, 5%);
+    border-radius: 3rem;
+  }
+}
+
+.fas.fa-arrow-left {
+  @include desktop {
+    padding-left: 2rem;
+  }
+}
+
+.menu__photo {
+  @include desktop {
+    height: 1317px;
+    position: absolute;
+    object-position: right;
+  }
+}
+
+.header__menu {
+  @include desktop {
+    justify-content: space-between;
+    width: 55%;
+  }
+}
+
+footer {
+  @include desktop {
+    flex-direction: row;
+    height: 125px;
+    margin-top: 4.6rem;
+    align-items: center;
+  }
+}
+
+footer .about {
+  @include desktop {
+    flex-direction: row;
+
+    justify-content: space-around;
+    width: 100%;
+    margin-left: 7rem;
+  }
+}
+
+footer h3 {
+  @include desktop {
+    padding-left: 2.1rem;
+    margin-bottom: 1rem;
+  }
+}

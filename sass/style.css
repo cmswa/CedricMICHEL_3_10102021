@@ -81,6 +81,7 @@ footer h3 {
   font-weight: 100;
   margin: 0;
   padding: 1rem 0;
+  padding-right: 1rem;
 }
 
 .btn {
@@ -632,4 +633,115 @@ section h2 {
   padding: 0 1rem;
   width: 92%;
   margin-bottom: -1rem;
+}
+
+/* ***  Responsive *** */
+@media all and (max-width: 330px) {
+  .btn__big--menu {
+    width: auto;
+  }
+}
+
+@media all and (min-width: 500px) and (max-width: 1100px) {
+  .menu__photo {
+    height: 498px;
+  }
+}
+
+@media all and (min-width: 500px) and (max-width: 1100px) {
+  .menu {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media all and (min-width: 500px) and (max-width: 1100px) {
+  footer {
+    padding-left: 1rem;
+  }
+}
+
+@media all and (min-width: 500px) and (max-width: 1100px) {
+  .card-menu--selection {
+    width: 6rem;
+  }
+}
+@media all and (min-width: 810px) {
+  .card-menu--selection {
+    width: 5rem;
+  }
+}
+
+@media all and (min-width: 500px) and (max-width: 1100px) {
+  .card-menu:hover .card-menu--text {
+    width: 83%;
+  }
+}
+@media all and (min-width: 500px) and (max-width: 810px) {
+  .card-menu:hover .card-menu--text {
+    width: 80%;
+  }
+}
+@media all and (min-width: 810px) and (max-width: 1100px) {
+  .card-menu:hover .card-menu--text {
+    width: 86%;
+  }
+}
+
+@media all and (min-width: 1100px) {
+  .menu {
+    width: 47%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: #f6f6f6e3;
+    transform: translate(98%, 5%);
+    border-radius: 3rem;
+  }
+}
+
+@media all and (min-width: 1100px) {
+  .fas.fa-arrow-left {
+    padding-left: 2rem;
+  }
+}
+
+@media all and (min-width: 1100px) {
+  .menu__photo {
+    height: 1317px;
+    position: absolute;
+    -o-object-position: right;
+       object-position: right;
+  }
+}
+
+@media all and (min-width: 1100px) {
+  .header__menu {
+    justify-content: space-between;
+    width: 55%;
+  }
+}
+
+@media all and (min-width: 1100px) {
+  footer {
+    flex-direction: row;
+    height: 125px;
+    margin-top: 4.6rem;
+    align-items: center;
+  }
+}
+
+@media all and (min-width: 1100px) {
+  footer .about {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin-left: 7rem;
+  }
+}
+
+@media all and (min-width: 1100px) {
+  footer h3 {
+    padding-left: 2.1rem;
+    margin-bottom: 1rem;
+  }
 }/*# sourceMappingURL=style.css.map */
