@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* ***  Responsive *** */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 body {
   width: 100%;
@@ -505,6 +506,8 @@ footer .about__icon {
   margin-right: 0.8rem;
 }
 
+/*  Page acceuil 
+********************/
 /* *** Descriptif *** */
 #descriptif {
   text-align: center;
@@ -603,6 +606,112 @@ section h2 {
 }
 .restaurant a {
   height: 100%;
+}
+
+/* ***  Responsive *** */
+@media all and (min-width: 500px) {
+  .use__li {
+    justify-content: flex-start;
+    right: 3%;
+  }
+}
+
+@media all and (min-width: 500px) {
+  .use__em--move {
+    left: 0;
+  }
+}
+
+@media all and (min-width: 500px) {
+  .use {
+    max-width: 71%;
+    margin-left: 6rem;
+  }
+}
+
+@media all and (min-width: 500px) {
+  article h2 {
+    padding-left: 6rem;
+  }
+}
+
+@media all and (min-width: 500px) {
+  section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media all and (min-width: 500px) {
+  .use__icon {
+    margin-right: 3rem;
+    margin-left: 4rem;
+  }
+}
+
+@media all and (min-width: 500px) and (max-width: 810px) {
+  .restaurant__card {
+    height: 336px;
+    margin-bottom: 2.1rem;
+  }
+}
+
+@media all and (min-width: 500px) and (max-width: 810px) {
+  .restaurant__new {
+    top: 12%;
+    left: 87%;
+  }
+}
+
+@media all and (min-width: 810px) and (max-width: 1100px) {
+  ul.restaurant {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 577px;
+    align-content: space-around;
+  }
+}
+
+@media all and (min-width: 810px) and (max-width: 1100px) {
+  .restaurant__card {
+    width: 46%;
+    margin-bottom: 0;
+  }
+}
+
+@media all and (min-width: 810px) and (max-width: 1100px) {
+  section h2 {
+    padding-left: 2.1rem;
+  }
+}
+
+@media all and (min-width: 810px) {
+  .use {
+    width: 26rem;
+  }
+}
+
+@media all and (min-width: 1100px) {
+  article {
+    background: #f6f6f6;
+    margin: 0;
+    padding: 3rem 0;
+  }
+}
+
+@media all and (min-width: 1100px) {
+  #descriptif {
+    float: right;
+    margin: 10rem 6% 0 0;
+  }
+}
+
+@media all and (min-width: 1100px) {
+  #descriptif h3 {
+    padding: 1rem 1rem 2rem 1rem;
+    margin-bottom: 3rem;
+  }
 }
 
 .menu__photo {

@@ -1,3 +1,6 @@
+/*  Page acceuil 
+********************/
+
 /* *** Descriptif *** */
 #descriptif {
   text-align: center;
@@ -102,5 +105,113 @@ section {
   padding-top: 0;
   a {
     height: 100%;
+  }
+}
+
+/* ***  Responsive *** */
+//   500px à 810px
+// > 500px
+
+.use__li {
+  @include mobile-max {
+    justify-content: flex-start;
+    right: 3%;
+  }
+}
+
+.use__em--move {
+  @include mobile-max {
+    left: 0;
+  }
+}
+
+.use {
+  @include mobile-max {
+    max-width: 71%;
+    margin-left: 6rem;
+  }
+}
+
+article h2 {
+  @include mobile-max {
+    padding-left: 6rem;
+  }
+}
+
+section {
+  @include mobile-max {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.use__icon {
+  @include mobile-max {
+    margin-right: 3rem;
+    margin-left: 4rem;
+  }
+}
+
+.restaurant__card {
+  @include tablet-small {
+    height: 336px;
+    margin-bottom: 2.1rem;
+  }
+}
+
+.restaurant__new {
+  @include tablet-small {
+    top: 12%;
+    left: 87%;
+  }
+}
+
+// 810px à 1100px
+ul.restaurant {
+  @include tablet-desktop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 577px;
+    align-content: space-around;
+  }
+}
+.restaurant__card {
+  @include tablet-desktop {
+    width: 46%;
+    margin-bottom: 0;
+  }
+}
+
+section h2 {
+  @include tablet-desktop {
+    padding-left: 2.1rem;
+  }
+}
+
+.use {
+  @include tabletmore {
+    width: 26rem;
+  }
+}
+
+// > 1100px
+article {
+  @include desktop {
+    background: $colorFourth;
+    margin: 0;
+    padding: 3rem 0;
+  }
+}
+#descriptif {
+  @include desktop {
+    float: right;
+    margin: 10rem 6% 0 0;
+  }
+}
+#descriptif h3 {
+  @include desktop {
+    padding: 1rem 1rem 2rem 1rem;
+    margin-bottom: 3rem;
   }
 }

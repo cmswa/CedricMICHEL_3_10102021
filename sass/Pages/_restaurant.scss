@@ -70,16 +70,16 @@ $breakpoints: (
   }
 }
 
-.btn__big--menu {
-  @include mobile-small {
-    width: auto;
-  }
-}
-
 // 500px à 810px
 @mixin tablet-small {
   @media all and (min-width: map-get($breakpoints, mobile2)) and (max-width: map-get($breakpoints, tablette1)) {
     @content;
+  }
+}
+
+.btn__big--menu {
+  @include mobile-small {
+    width: auto;
   }
 }
 

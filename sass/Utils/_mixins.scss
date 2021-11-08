@@ -20,3 +20,65 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+/* ***  Responsive *** */
+$breakpoints: (
+  mobile1: 330px,
+  mobile2: 500px,
+  tablette1: 810px,
+  desktop: 1100px,
+);
+
+// < 500px
+@mixin mobile-small {
+  @media all and (max-width: map-get($breakpoints, mobile1)) {
+    @content;
+  }
+}
+
+// > 500px
+@mixin mobile-max {
+  @media all and (min-width: map-get($breakpoints, mobile2)) {
+    @content;
+  }
+}
+
+// 500px à 810px
+@mixin tablet-small {
+  @media all and (min-width: map-get($breakpoints, mobile2)) and (max-width: map-get($breakpoints, tablette1)) {
+    @content;
+  }
+}
+
+// 500px à 1100px
+@mixin tablet-small-desktop {
+  @media all and (min-width: map-get($breakpoints, mobile2)) and (max-width: map-get($breakpoints, desktop)) {
+    @content;
+  }
+}
+
+// > 810px
+@mixin tabletmore {
+  @media all and (min-width: map-get($breakpoints, tablette1)) {
+    @content;
+  }
+}
+
+// 810px à 1100px
+@mixin tablet-desktop {
+  @media all and (min-width: map-get($breakpoints, tablette1)) and (max-width: map-get($breakpoints, desktop)) {
+    @content;
+  }
+}
+
+// > 1100px
+@mixin desktop {
+  @media all and (min-width: map-get($breakpoints, desktop)) {
+    @content;
+  }
+}
+
+
+
+
+
