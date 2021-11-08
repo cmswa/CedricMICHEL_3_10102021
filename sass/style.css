@@ -609,6 +609,37 @@ section h2 {
 }
 
 /* ***  Responsive *** */
+@media all and (max-width: 330px) {
+  .use--background {
+    padding-right: 0;
+  }
+}
+
+@media all and (max-width: 330px) {
+  .use {
+    margin-left: 0;
+  }
+}
+
+@media all and (max-width: 330px) {
+  .restaurant__new {
+    left: 77%;
+  }
+}
+
+@media all and (max-width: 330px) {
+  .use em {
+    font-size: 0.9em;
+  }
+}
+
+@media all and (max-width: 330px) {
+  .use {
+    max-width: 100%;
+    margin-left: 5px;
+  }
+}
+
 @media all and (min-width: 500px) {
   .use__li {
     justify-content: flex-start;
@@ -625,13 +656,13 @@ section h2 {
 @media all and (min-width: 500px) {
   .use {
     max-width: 71%;
-    margin-left: 6rem;
+    margin-left: 4rem;
   }
 }
 
 @media all and (min-width: 500px) {
   article h2 {
-    padding-left: 6rem;
+    padding-left: 3rem;
   }
 }
 
@@ -692,6 +723,18 @@ section h2 {
   }
 }
 
+@media all and (min-width: 810px) {
+  article h2 {
+    padding-left: 6rem;
+  }
+}
+
+@media all and (min-width: 810px) {
+  .use {
+    margin-left: 6rem;
+  }
+}
+
 @media all and (min-width: 1100px) {
   article {
     background: #f6f6f6;
@@ -704,16 +747,61 @@ section h2 {
   #descriptif {
     float: right;
     margin: 10rem 6% 0 0;
+    display: flex;
+    flex-direction: column;
+    width: 44%;
+    flex-wrap: wrap;
+    align-items: center;
   }
 }
 
 @media all and (min-width: 1100px) {
   #descriptif h3 {
-    padding: 1rem 1rem 2rem 1rem;
-    margin-bottom: 3rem;
+    padding: 0 1rem;
+    margin-bottom: 4rem;
   }
 }
 
+@media all and (min-width: 1100px) {
+  ul.restaurant {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    height: 492px;
+    justify-content: space-between;
+    padding: 0;
+  }
+}
+
+@media all and (min-width: 1100px) {
+  .restaurant__card {
+    width: 46%;
+    margin-bottom: 0;
+  }
+}
+
+@media all and (min-width: 1100px) {
+  section {
+    padding-bottom: 6rem;
+  }
+}
+@media all and (min-width: 1100px) {
+  section h2 {
+    padding-left: 2.1rem;
+  }
+}
+
+@media all and (min-width: 1100px) {
+  .restaurant__photo {
+    height: 79.6%;
+  }
+}
+@media all and (min-width: 1100px) {
+  .restaurant__card {
+    width: 24%;
+    height: 396px;
+  }
+}
 .menu__photo {
   height: 260px;
   width: 100%;
@@ -805,6 +893,7 @@ section h2 {
     background-color: #f6f6f6e3;
     transform: translate(98%, 5%);
     border-radius: 3rem;
+    margin-bottom: 1.6rem;
   }
 }
 
@@ -834,7 +923,6 @@ section h2 {
   footer {
     flex-direction: row;
     height: 125px;
-    margin-top: 4.6rem;
     align-items: center;
   }
 }
