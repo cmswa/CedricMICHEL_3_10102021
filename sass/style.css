@@ -194,33 +194,33 @@ footer h3 {
   -webkit-text-stroke: 0px white;
 }
 
+/* autre méthode avec un bouton
 .btn-heart {
   font-size: 1.5em;
   display: flex;
   border: none;
   background: none;
-}
-.btn-heart--off {
-  position: absolute;
-  opacity: 1;
-  transition-duration: 0.7s;
-  -webkit-text-stroke: 1px white;
-}
-.btn-heart--on {
-  opacity: 0;
-  transition-duration: 0.7s;
-  background: linear-gradient(174deg, #FF79DA 0%, #9356DC 100%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.btn-heart:hover .btn-heart--off {
-  opacity: 0;
-}
-.btn-heart:hover .btn-heart--on {
-  opacity: 1;
-}
-
+  &--off {
+    position: absolute;
+    opacity: 1;
+    transition-duration: 0.7s;
+    -webkit-text-stroke: 1px white;
+  }
+  &--on {
+    opacity: 0;
+    transition-duration: 0.7s;
+    @include background;
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  &:hover &--off {
+    opacity: 0;
+  }
+  &:hover &--on {
+    opacity: 1;
+  }
+} */
 /* ***** Home Acceuil * *****/
 .restaurant__card {
   height: 250px;
@@ -428,10 +428,138 @@ footer h3 {
   width: 79%;
 }
 
+html,
+body {
+  height: 100%;
+}
+
+.loader-chargement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: white;
+  -webkit-animation: loader-out 3s both;
+          animation: loader-out 3s both;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+
+@-webkit-keyframes loader-out {
+  99% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(1000000px);
+  }
+}
+
+@keyframes loader-out {
+  99% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(1000000px);
+  }
+}
+.loader-spinner {
+  position: relative;
+  -webkit-animation: rotator 1.4s infinite;
+          animation: rotator 1.4s infinite;
+}
+
+@-webkit-keyframes rotator {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(270deg);
+  }
+}
+
+@keyframes rotator {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(270deg);
+  }
+}
+.path {
+  stroke-dasharray: 187;
+  stroke-dashoffset: 0;
+  transform-origin: center;
+  -webkit-animation: dash 1.4s ease-in-out infinite, colors 5.6s ease-in-out infinite;
+          animation: dash 1.4s ease-in-out infinite, colors 5.6s ease-in-out infinite;
+}
+
+@-webkit-keyframes colors {
+  0% {
+    stroke: #9356DC;
+  }
+  25% {
+    stroke: #FF79DA;
+  }
+  50% {
+    stroke: #99E2D0;
+  }
+  75% {
+    stroke: #f6f6f6;
+  }
+  100% {
+    stroke: #eaeaea;
+  }
+}
+
+@keyframes colors {
+  0% {
+    stroke: #9356DC;
+  }
+  25% {
+    stroke: #FF79DA;
+  }
+  50% {
+    stroke: #99E2D0;
+  }
+  75% {
+    stroke: #f6f6f6;
+  }
+  100% {
+    stroke: #eaeaea;
+  }
+}
+@-webkit-keyframes dash {
+  0% {
+    stroke-dashoffset: 187;
+  }
+  50% {
+    stroke-dashoffset: 46.75;
+    transform: rotate(135deg);
+  }
+  100% {
+    stroke-dashoffset: 187;
+    transform: rotate(450deg);
+  }
+}
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 187;
+  }
+  50% {
+    stroke-dashoffset: 46.75;
+    transform: rotate(135deg);
+  }
+  100% {
+    stroke-dashoffset: 187;
+    transform: rotate(450deg);
+  }
+}
 .header h1 {
   text-align: center;
-  margin-top: 1rem;
+  margin-top: 0;
   margin-bottom: 0.5rem;
+  padding-top: 0.9rem;
 }
 .header__logo {
   max-width: 160px;

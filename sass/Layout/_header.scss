@@ -1,14 +1,16 @@
 .header {
   h1 {
     text-align: center;
-    margin-top: 1rem;
+    //margin-top: 1rem;
+    margin-top: 0;
     margin-bottom: 0.5rem;
+    padding-top: 0.9rem;
   }
   &__logo {
     max-width: 160px;
     // width: 160px;
   }
-  &__menu{
+  &__menu {
     display: flex;
     align-items: center;
     justify-content: space-around;
