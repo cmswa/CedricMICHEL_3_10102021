@@ -27,6 +27,7 @@ $breakpoints: (
   mobile2: 500px,
   tablette1: 810px,
   desktop: 1100px,
+  desktop2: 1400px,
 );
 
 // < 500px
@@ -73,12 +74,17 @@ $breakpoints: (
 
 // > 1100px
 @mixin desktop {
-  @media all and (min-width: map-get($breakpoints, desktop)) {
+  @media all and (min-width: map-get($breakpoints, desktop))  {
     @content;
   }
 }
 
-
+// > 1400px
+@mixin desktopmore {
+  @media all and (min-width: map-get($breakpoints, desktop2)) {
+    @content;
+  }
+}
 
 
 

@@ -427,6 +427,11 @@ footer h3 {
 .card-menu:hover .card-menu--text {
   width: 79%;
 }
+@media all and (min-width: 1400px) {
+  .card-menu:hover .card-menu--text {
+    width: 85%;
+  }
+}
 
 html,
 body {

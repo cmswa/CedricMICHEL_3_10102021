@@ -180,5 +180,8 @@
   }
   &:hover .card-menu--text {
     width: 79%;
+    @include desktopmore {
+      width: 85%;
+    }
   }
 }
