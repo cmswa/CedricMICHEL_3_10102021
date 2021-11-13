@@ -27,58 +27,6 @@
   }
 }
 
-/*.fa-heart {
-  &:hover + .fa-heart::after,
-  &:focus + .fa-heart::after,
-  &:active + .fa-heart::after {
-    transform: scale(1);
-  }
-   .fa-heart::after,
-  .fa-heart:hover::after,
-  .fa-heart:focus::after {
-    position: absolute;
-    background: linear-gradient(174deg, $colorSecondary 0%, $colorPrimary 100%);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    opacity: 0;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: scale(0.1);
-    transition: transform 3000ms;
-  }
-}*/
-
-/*.restaurant__heart {
-  font-size: 1.5rem;
-  padding-right: 1rem;
-  display: flex;
-  &--off {
-    position: absolute;
-    opacity: 1;
-    &:hover {
-      opacity: 0;
-    }
-  }
-  &--on {
-    opacity: 0;
-    background: red;
-    background-image: linear-gradient(
-      174deg,
-      $colorSecondary 0%,
-      $colorPrimary 100%
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    &:hover {
-      opacity: 1;
-      z-index: 1;
-      transform: scale(1);
-    }
-  }
-}*/
-
 .restaurant__heart {
   font-size: 1.5rem;
   padding-right: 1rem;
@@ -114,31 +62,3 @@
     }
   }
 }
-
-/* autre méthode avec un bouton
-.btn-heart {
-  font-size: 1.5em;
-  display: flex;
-  border: none;
-  background: none;
-  &--off {
-    position: absolute;
-    opacity: 1;
-    transition-duration: 0.7s;
-    -webkit-text-stroke: 1px white;
-  }
-  &--on {
-    opacity: 0;
-    transition-duration: 0.7s;
-    @include background;
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  &:hover &--off {
-    opacity: 0;
-  }
-  &:hover &--on {
-    opacity: 1;
-  }
-} */

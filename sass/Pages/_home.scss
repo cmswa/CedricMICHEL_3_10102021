@@ -159,7 +159,8 @@ section {
 
 .use {
   @include mobile-max {
-    max-width: 71%;
+    //max-width: 71%;
+    max-width: 73%;
     margin-left: 4rem;
   }
 }
